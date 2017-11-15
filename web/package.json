@@ -1,0 +1,29 @@
+{
+  "name": "faithlifeinbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/babel-node ./src/index.js",
+    "mongo": "sudo mongod --dbpath=/data"
+  },
+  "author": "Michael Nakayama",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "compromise": "^11.0.2",
+    "express": "^4.16.2",
+    "moment": "^2.19.1",
+    "mongodb": "^2.2.33",
+    "mysql2": "^1.4.2",
+    "request": "^2.83.0",
+    "socket.io-client": "^2.0.3",
+    "ws": "^3.2.0"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-cli": "^6.26.0",
+    "babel-preset-stage-2": "^6.24.1"
+  }
+}

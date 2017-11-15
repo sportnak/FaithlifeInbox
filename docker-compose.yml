@@ -1,0 +1,14 @@
+version: '3'
+
+volumes:
+  database_data:
+    driver: local
+
+services:
+  web:
+    build: ./web/
+    ports:
+      - 3000:80
+  mongodb:
+    restart: always
+    image: mongo
